@@ -1,5 +1,5 @@
 # AMBA_AXI
-Use AXI to connect a RAM memory.
+Use AXI to connect a RAM.
 
 # Write & Read waveform
 ![W R_waveform](https://github.com/Kai-Dun/AMBA_AXI/assets/93189715/b3d6b343-5846-4b64-878d-aec665543659)
