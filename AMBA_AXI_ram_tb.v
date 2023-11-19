@@ -52,21 +52,21 @@ wire						s_axi_rlast;
 
 
 //======================== debug ==============================
-wire [DATA_WIDTH - 1 : 0] mem_w[(1 << MEM_ADDR_SIZE) - 1 : 0];
-assign mem_w = AMBA_AXI_ram_tb.AMBA_AXI_ram_Inst.mem;
-//
-wire [1:0] W_state, W_next_state;
-assign W_state = AMBA_AXI_ram_tb.AMBA_AXI_ram_Inst.W_state;
-assign W_next_state = AMBA_AXI_ram_tb.AMBA_AXI_ram_Inst.W_next_state;
+// wire [DATA_WIDTH - 1 : 0] mem_w[(1 << MEM_ADDR_SIZE) - 1 : 0];
+// assign mem_w = AMBA_AXI_ram_tb.AMBA_AXI_ram_Inst.mem;
+// //
+// wire [1:0] W_state, W_next_state;
+// assign W_state = AMBA_AXI_ram_tb.AMBA_AXI_ram_Inst.W_state;
+// assign W_next_state = AMBA_AXI_ram_tb.AMBA_AXI_ram_Inst.W_next_state;
 
-reg [7:0] wdata_index_cnt;
-assign wdata_index_cnt = AMBA_AXI_ram_tb.AMBA_AXI_ram_Inst.wdata_index_cnt;
+// reg [7:0] wdata_index_cnt;
+// assign wdata_index_cnt = AMBA_AXI_ram_tb.AMBA_AXI_ram_Inst.wdata_index_cnt;
 
-wire [1+$clog2(WR_MEM_DELAY) : 0] wr_mem_delay_cnt;
-assign wr_mem_delay_cnt = AMBA_AXI_ram_tb.AMBA_AXI_ram_Inst.wr_mem_delay_cnt;
+// wire [1+$clog2(WR_MEM_DELAY) : 0] wr_mem_delay_cnt;
+// assign wr_mem_delay_cnt = AMBA_AXI_ram_tb.AMBA_AXI_ram_Inst.wr_mem_delay_cnt;
 
-wire [ADDR_WIDTH - 1 : 0] 		s_axi_awaddr_reg;
-assign s_axi_awaddr_reg = AMBA_AXI_ram_tb.AMBA_AXI_ram_Inst.s_axi_awaddr_reg;
+// wire [ADDR_WIDTH - 1 : 0] 		s_axi_awaddr_reg;
+// assign s_axi_awaddr_reg = AMBA_AXI_ram_tb.AMBA_AXI_ram_Inst.s_axi_awaddr_reg;
 //
 //wire R_state, R_next_state;
 //assign R_state = AMBA_AXI_ram_tb.AMBA_AXI_ram_Inst.R_state;
